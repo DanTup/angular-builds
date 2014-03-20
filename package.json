@@ -1,0 +1,5 @@
+﻿{
+    "name": "angular-builds",
+    "version": "0.9.5",
+    "description": "A build of AngularJS version 0.9.5 in a format that's friendly for 'npm install https://github.com/DanTup/angular-builds/tarball/0.9.5' --save-dev"
+}
