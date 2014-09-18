@@ -5,6 +5,5 @@ This repo is a mirror of the AngularJS build outputs. As there are no official n
 
 To install Angular via npm, execute:
 
-    npm install https://github.com/DanTup/angular-builds/tarball/1.2.14 --save-dev
+    npm install angular-builds
     
-Note: Be sure to replace 1.2.14 with whichever version you wish to use.
