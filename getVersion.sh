@@ -19,7 +19,7 @@ curl https://code.angularjs.org/$SEMVER/angular-$SEMVER.zip > angular.zip
 echo "Unzipping 'angular-$SEMVER.zip'..."
 unzip angular.zip || (echo "Unzip failed!" && exit 6)
 mv angular-$SEMVER/* .
-rm -rf angular.zip angular-$SEMVER/
+rm -rf angular.zip angular-$SEMVER/ docs/
 
 echo "Adding 'package.json'..."
 cat >| package.json <<EOF
