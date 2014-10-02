@@ -1,1 +1,5 @@
-
+{
+    "name": "angular-builds",
+    "version": "1.3.0-rc.4",
+    "description": "A build of AngularJS version 1.3.0-rc.4 in a format that's friendly for 'npm install angular-builds@1.3.0-rc.4'"
+}
