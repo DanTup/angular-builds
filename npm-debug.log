@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/Users/southerd/.nvm/v0.10.30/bin/npm', 'publish' ]
+2 info using npm@2.0.2
+3 info using node@v0.10.30
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add spec="." args=[".",null]
+7 verbose parsed spec { raw: '.',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: null,
+7 verbose parsed spec   rawSpec: '.',
+7 verbose parsed spec   spec: '/Users/southerd/devel/southerd/libraries/angular-builds',
+7 verbose parsed spec   type: 'local' }
+8 verbose cache add local package /Users/southerd/devel/southerd/libraries/angular-builds
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /Users/southerd/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/Users/southerd/.npm/angular-builds/1.3.0-rc.5/package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball /Users/southerd/.npm/angular-builds/1.3.0-rc.5/package.tgz
+13 verbose folder .
+14 info prepublish angular-builds@1.3.0-rc.5
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /Users/southerd/.npm/1f1177db-tar.lock
+17 silly lockFile 5d61502b-ar-builds-1-3-0-rc-5-package-tgz tar:///Users/southerd/.npm/angular-builds/1.3.0-rc.5/package.tgz
+18 verbose lock tar:///Users/southerd/.npm/angular-builds/1.3.0-rc.5/package.tgz /Users/southerd/.npm/5d61502b-ar-builds-1-3-0-rc-5-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 5d61502b-ar-builds-1-3-0-rc-5-package-tgz tar:///Users/southerd/.npm/angular-builds/1.3.0-rc.5/package.tgz
+22 silly lockFile 5d61502b-ar-builds-1-3-0-rc-5-package-tgz tar:///Users/southerd/.npm/angular-builds/1.3.0-rc.5/package.tgz
+23 silly lockFile 77cfb34d-ngular-builds-1-3-0-rc-5-package /Users/southerd/.npm/angular-builds/1.3.0-rc.5/package
+24 verbose lock /Users/southerd/.npm/angular-builds/1.3.0-rc.5/package /Users/southerd/.npm/77cfb34d-ngular-builds-1-3-0-rc-5-package.lock
+25 silly lockFile 77cfb34d-ngular-builds-1-3-0-rc-5-package /Users/southerd/.npm/angular-builds/1.3.0-rc.5/package
+26 silly lockFile 77cfb34d-ngular-builds-1-3-0-rc-5-package /Users/southerd/.npm/angular-builds/1.3.0-rc.5/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'angular-builds',
+29 silly publish   version: '1.3.0-rc.5',
+29 silly publish   description: 'A build of AngularJS version 1.3.0-rc.5 in a format that\'s friendly for \'npm install angular-builds@1.3.0-rc.5\'',
+29 silly publish   readme: 'AngularJS Builds\n==============\n\nThis repo is a mirror of the AngularJS build outputs. As there are no official npm modules for Angular, I wanted a convenient way to manage Angular used for testing (with Karma) in my repos without committing the whole thing. Since my repo was already friendly to ```npm install``` after a clean clone, a Git repo seemed like an easy way to do it.\n\nTo install Angular via npm, execute:\n\n    npm install https://github.com/DanTup/angular-builds/tarball/1.2.14 --save-dev\n    \nNote: Be sure to replace 1.2.14 with whichever version you wish to use.\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '080f34dc79c83276c8e3d4dfb5939b19c1c8066d',
+29 silly publish   _id: 'angular-builds@1.3.0-rc.5',
+29 silly publish   scripts: {},
+29 silly publish   _shasum: 'd136798740a5747ac7f10ad0683abdd343dbc6f9',
+29 silly publish   _from: '.' }
+30 verbose mapToRegistry name angular-builds
+31 verbose mapToRegistry uri https://registry.npmjs.org/angular-builds
+32 verbose publish registryBase https://registry.npmjs.org/
+33 verbose request on initialization, where is /angular-builds
+34 verbose request after pass 1, where is /angular-builds
+35 verbose request url raw /angular-builds
+36 verbose request resolving registry [ 'https://registry.npmjs.org/', './angular-builds' ]
+37 verbose request after pass 2, where is https://registry.npmjs.org/angular-builds
+38 verbose request sending authorization for write operation
+39 info attempt registry request try #1 at 12:43:50
+40 verbose request id e6965bbd9a325d8d
+41 http request PUT https://registry.npmjs.org/angular-builds
+42 http 403 https://registry.npmjs.org/angular-builds
+43 verbose headers { date: 'Thu, 09 Oct 2014 16:43:54 GMT',
+43 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+43 verbose headers   'content-type': 'application/json',
+43 verbose headers   'cache-control': 'max-age=60',
+43 verbose headers   'content-length': '2269',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   'x-served-by': 'cache-jfk1030-JFK',
+43 verbose headers   'x-cache': 'MISS',
+43 verbose headers   'x-cache-hits': '0',
+43 verbose headers   'x-timer': 'S1412873031.497967,VS0,VE2820',
+43 verbose headers   'keep-alive': 'timeout=10, max=50',
+43 verbose headers   connection: 'Keep-Alive' }
+44 error publish Failed PUT 403
+45 verbose stack Error: forbidden cannot modify pre-existing version: 1.3.0-rc.5
+45 verbose stack old={"name":"angular-builds","version":"1.3.0-rc.5","description":"A build of AngularJS version v1.3.0-rc.5 in a format that's friendly for 'npm install angular-builds@v1.3.0-rc.5'","gitHead":"f651962ed08e77e0b4ea1fc3100a071cab7737f1","_id":"angular-builds@1.3.0-rc.5","scripts":{},"_shasum":"eeeccb54849da1dca4b6ae541a26a187c99397c8","_from":".","_npmVersion":"2.0.2","_nodeVersion":"0.10.30","_npmUser":{"name":"davidsouther","email":"davidsouther@gmail.com"},"maintainers":[{"name":"davidsouther","email":"davidsouther@gmail.com"}],"dist":{"shasum":"eeeccb54849da1dca4b6ae541a26a187c99397c8","tarball":"http://registry.npmjs.org/angular-builds/-/angular-builds-1.3.0-rc.5.tgz"}}
+45 verbose stack new={"name":"angular-builds","version":"1.3.0-rc.5","description":"A build of AngularJS version 1.3.0-rc.5 in a format that's friendly for 'npm install angular-builds@1.3.0-rc.5'","readme":"AngularJS Builds\u000a==============\u000a\u000aThis repo is a mirror of the AngularJS build outputs. As there are no official npm modules for Angular, I wanted a convenient way to manage Angular used for testing (with Karma) in my repos without committing the whole thing. Since my repo was already friendly to ```npm install``` after a clean clone, a Git repo seemed like an easy way to do it.\u000a\u000aTo install Angular via npm, execute:\u000a\u000a    npm install https://github.com/DanTup/angular-builds/tarball/1.2.14 --save-dev\u000a    \u000aNote: Be sure to replace 1.2.14 with whichever version you wish to use.\u000a","readmeFilename":"README.md","gitHead":"080f34dc79c83276c8e3d4dfb5939b19c1c8066d","_id":"angular-builds@1.3.0-rc.5","scripts":{},"_shasum":"d136798740a5747ac7f10ad0683abdd343dbc6f9","_from":".","_npmVersion":"2.0.2","_nodeVersion":"0.10.30","_npmUser":{"name":"davidsouther","email":"davidsouther@gmail.com"},"maintainers":[{"name":"davidsouther","email":"davidsouther@gmail.com"}],"dist":{"shasum":"d136798740a5747ac7f10ad0683abdd343dbc6f9","tarball":"http://registry.npmjs.org/angular-builds/-/angular-builds-1.3.0-rc.5.tgz"}}: angular-builds
+45 verbose stack     at RegClient.<anonymous> (/Users/southerd/.nvm/v0.10.30/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:260:14)
+45 verbose stack     at Request._callback (/Users/southerd/.nvm/v0.10.30/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:197:65)
+45 verbose stack     at Request.self.callback (/Users/southerd/.nvm/v0.10.30/lib/node_modules/npm/node_modules/request/request.js:237:22)
+45 verbose stack     at Request.emit (events.js:98:17)
+45 verbose stack     at Request.<anonymous> (/Users/southerd/.nvm/v0.10.30/lib/node_modules/npm/node_modules/request/request.js:1146:14)
+45 verbose stack     at Request.emit (events.js:117:20)
+45 verbose stack     at IncomingMessage.<anonymous> (/Users/southerd/.nvm/v0.10.30/lib/node_modules/npm/node_modules/request/request.js:1097:12)
+45 verbose stack     at IncomingMessage.emit (events.js:117:20)
+45 verbose stack     at _stream_readable.js:938:16
+45 verbose stack     at process._tickCallback (node.js:419:13)
+46 verbose statusCode 403
+47 verbose pkgid angular-builds
+48 verbose cwd /Users/southerd/devel/southerd/libraries/angular-builds
+49 error Darwin 13.4.0
+50 error argv "node" "/Users/southerd/.nvm/v0.10.30/bin/npm" "publish"
+51 error node v0.10.30
+52 error npm  v2.0.2
+53 error code E403
+54 error forbidden cannot modify pre-existing version: 1.3.0-rc.5
+54 error old={"name":"angular-builds","version":"1.3.0-rc.5","description":"A build of AngularJS version v1.3.0-rc.5 in a format that's friendly for 'npm install angular-builds@v1.3.0-rc.5'","gitHead":"f651962ed08e77e0b4ea1fc3100a071cab7737f1","_id":"angular-builds@1.3.0-rc.5","scripts":{},"_shasum":"eeeccb54849da1dca4b6ae541a26a187c99397c8","_from":".","_npmVersion":"2.0.2","_nodeVersion":"0.10.30","_npmUser":{"name":"davidsouther","email":"davidsouther@gmail.com"},"maintainers":[{"name":"davidsouther","email":"davidsouther@gmail.com"}],"dist":{"shasum":"eeeccb54849da1dca4b6ae541a26a187c99397c8","tarball":"http://registry.npmjs.org/angular-builds/-/angular-builds-1.3.0-rc.5.tgz"}}
+54 error new={"name":"angular-builds","version":"1.3.0-rc.5","description":"A build of AngularJS version 1.3.0-rc.5 in a format that's friendly for 'npm install angular-builds@1.3.0-rc.5'","readme":"AngularJS Builds\u000a==============\u000a\u000aThis repo is a mirror of the AngularJS build outputs. As there are no official npm modules for Angular, I wanted a convenient way to manage Angular used for testing (with Karma) in my repos without committing the whole thing. Since my repo was already friendly to ```npm install``` after a clean clone, a Git repo seemed like an easy way to do it.\u000a\u000aTo install Angular via npm, execute:\u000a\u000a    npm install https://github.com/DanTup/angular-builds/tarball/1.2.14 --save-dev\u000a    \u000aNote: Be sure to replace 1.2.14 with whichever version you wish to use.\u000a","readmeFilename":"README.md","gitHead":"080f34dc79c83276c8e3d4dfb5939b19c1c8066d","_id":"angular-builds@1.3.0-rc.5","scripts":{},"_shasum":"d136798740a5747ac7f10ad0683abdd343dbc6f9","_from":".","_npmVersion":"2.0.2","_nodeVersion":"0.10.30","_npmUser":{"name":"davidsouther","email":"davidsouther@gmail.com"},"maintainers":[{"name":"davidsouther","email":"davidsouther@gmail.com"}],"dist":{"shasum":"d136798740a5747ac7f10ad0683abdd343dbc6f9","tarball":"http://registry.npmjs.org/angular-builds/-/angular-builds-1.3.0-rc.5.tgz"}}: angular-builds
+55 error If you need help, you may report this error at:
+55 error     <http://github.com/npm/npm/issues>
+56 verbose exit [ 1, true ]
