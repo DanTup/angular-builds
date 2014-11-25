@@ -1,1 +1,5 @@
-
+{
+    "name": "angular-builds",
+    "version": "v1.3.4",
+    "description": "A build of AngularJS version v1.3.4 in a format that's friendly for 'npm install angular-builds@v1.3.4'"
+}
