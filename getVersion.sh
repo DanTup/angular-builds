@@ -31,6 +31,7 @@ cat >| package.json <<EOF
 EOF
 
 git add .
+git add i18n
 git commit -m "Release of $SEMVER"
 git push origin $SEMVER
 npm publish
