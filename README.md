@@ -1,5 +1,5 @@
 
-> NOTE: This software is not being actively developed or maintained.
+> NOTE: This repo is not being actively developed or maintained.
 
 AngularJS Builds
 ==============
