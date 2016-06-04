@@ -1,3 +1,6 @@
+
+> NOTE: This software is not being actively developed or maintained.
+
 AngularJS Builds
 ==============
 
